@@ -94,7 +94,7 @@ function validarUsiarioAutenticado() {
             window.open("../html/cliente.html", "_self")
         }
 
-    } else if (!logado && window.location.pathname == "/html/cliente.html") {
+    } else if (!logado && (window.location.pathname == "/html/cliente.html" || window.location.pathname =="/html/produto.html" || window.location.pathname =="/html/usuarios.html")) {
         direcionarTelaDeLogin();
     }
 }

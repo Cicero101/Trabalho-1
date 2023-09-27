@@ -187,6 +187,8 @@ function adicionarClienteBackend(cliente) {
     })
 }
 function atualizarClienteBackend(cliente) {
+    
+    cliente.dataCadastro = new Date().toISOString();
 
     fetch(`${URL}/${cliente.id}`,{
         method: 'PUT',
